@@ -9,7 +9,7 @@ export function Logo({ compact = false }: LogoProps) {
     <span className={`brand${compact ? ' brand--compact' : ''}`}>
       <img
         className="brand__image"
-        src="/assets/robaski-logo.png"
+        src="/assets/robaski-logo-transparent.png"
         alt={company.name}
         width="936"
         height="328"
