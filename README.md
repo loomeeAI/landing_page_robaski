@@ -1,6 +1,6 @@
 # Distribuidora Robaski
 
-Landing page institucional desenvolvida com React, Vite e TypeScript.
+Landing page institucional da Distribuidora Robaski, desenvolvida com React, Vite e TypeScript.
 
 ## Desenvolvimento local
 
@@ -17,16 +17,12 @@ npm run build
 
 O conteúdo de `dist/` é gerado pelo build. O projeto inclui `vercel.json` para que a rota `/politica-de-privacidade` funcione ao ser acessada diretamente na Vercel.
 
-## Logo oficial
+## Estrutura
 
-Antes da publicação, adicione o logo oficial em:
+- `src/data/company.ts`: dados institucionais, navegação e URLs de contato.
+- `src/pages/HomePage.tsx`: landing page institucional.
+- `src/pages/PrivacyPage.tsx`: política de privacidade.
+- `src/components`: cabeçalho, rodapé e marca.
+- `public/assets/robaski-logo.png`: ativo de marca usado no site.
 
-```text
-public/assets/robaski-logo.png
-```
-
-Enquanto o arquivo não estiver disponível, o cabeçalho e o rodapé exibem um fallback visual discreto. O mesmo arquivo será usado como favicon após ser adicionado.
-
-## Informações da empresa
-
-Telefone, endereço, e-mail e links estão centralizados em `src/data/company.ts`.
+O projeto não usa formulários, banco de dados, contas ou ferramentas próprias de rastreamento.

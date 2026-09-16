@@ -17,8 +17,15 @@ export const company = {
     country: 'Brasil',
     postalLabel: 'Sapucaia do Sul - RS',
   },
-  socialLinks: {} as Record<string, string>,
 } as const
+
+export const navigation = [
+  { label: 'Início', href: '#inicio' },
+  { label: 'A Robaski', href: '#empresa' },
+  { label: 'Operação', href: '#operacao' },
+  { label: 'Diferenciais', href: '#diferenciais' },
+  { label: 'Contato', href: '#contato' },
+] as const
 
 const fullAddress = `${company.address.street}, ${company.address.neighborhood}, ${company.address.city} - ${company.address.state}, ${company.address.country}`
 
