@@ -8,7 +8,7 @@ export const company = {
   whatsappNumber: '5551999883684',
   whatsappMessage:
     'Olá! Vim através do site da Distribuidora Robaski e gostaria de mais informações.',
-  email: 'edsonrobaski@gmail.com',
+  email: 'edson@robaski.com.br',
   address: {
     street: 'R. Cristóvão Colombo, 201',
     neighborhood: 'Piratini',

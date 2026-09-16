@@ -18,9 +18,9 @@ const logisticsPrinciples = [
 ] as const
 
 const commercialPillars = [
-  { number: '01', title: 'Representação comercial', text: 'Relacionamento e presença na condução de cada negociação.' },
-  { number: '02', title: 'Atendimento', text: 'Comunicação próxima para orientar e dar sequência às demandas.' },
-  { number: '03', title: 'Distribuição', text: 'Integração entre a operação comercial e a etapa de entrega.' },
+  { title: 'Representação comercial', text: 'Relacionamento e presença na condução de cada negociação.' },
+  { title: 'Atendimento', text: 'Comunicação próxima para orientar e dar sequência às demandas.' },
+  { title: 'Distribuição', text: 'Integração entre a operação comercial e a etapa de entrega.' },
 ] as const
 
 const culturePrinciples = ['Foco', 'Organização', 'Evolução', 'Trabalho em equipe'] as const
@@ -135,9 +135,8 @@ export function HomePage() {
             </div>
 
             <div className="principles">
-              {logisticsPrinciples.map((principle, index) => (
+              {logisticsPrinciples.map((principle) => (
                 <article className="principle" key={principle.title}>
-                  <span>{String(index + 1).padStart(2, '0')}</span>
                   <h3>{principle.title}</h3>
                   <p>{principle.text}</p>
                 </article>
@@ -165,8 +164,7 @@ export function HomePage() {
             </div>
             <div className="commercial__grid">
               {commercialPillars.map((pillar) => (
-                <article key={pillar.number}>
-                  <span>{pillar.number}</span>
+                <article key={pillar.title}>
                   <h3>{pillar.title}</h3>
                   <p>{pillar.text}</p>
                 </article>
@@ -183,8 +181,8 @@ export function HomePage() {
               <p>Disciplina, trabalho em equipe e melhoria contínua fazem parte da forma como a Robaski conduz sua operação.</p>
             </div>
             <ul>
-              {culturePrinciples.map((principle, index) => (
-                <li key={principle}><span>{String(index + 1).padStart(2, '0')}</span>{principle}</li>
+              {culturePrinciples.map((principle) => (
+                <li key={principle}>{principle}</li>
               ))}
             </ul>
           </div>
