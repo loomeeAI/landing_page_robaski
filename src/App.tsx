@@ -11,12 +11,16 @@ const homeMetadata = {
 
 export default function App() {
   useEffect(() => {
+    const pageUrl = `${window.location.origin}${isPrivacyPage ? '/politica-de-privacidade' : '/'}`
+    const socialImageUrl = `${window.location.origin}/robaski-compartilhamento-2026.jpg`
     const canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]')
-    if (canonical) canonical.href = `${window.location.origin}${isPrivacyPage ? '/politica-de-privacidade' : '/'}`
+    if (canonical) canonical.href = pageUrl
 
-    document.querySelectorAll<HTMLMetaElement>('meta[property="og:image"], meta[name="twitter:image"]').forEach((meta) => {
-      meta.content = `${window.location.origin}/og.jpg`
+    document.querySelectorAll<HTMLMetaElement>('meta[property="og:image"], meta[property="og:image:secure_url"], meta[name="twitter:image"]').forEach((meta) => {
+      meta.content = socialImageUrl
     })
+    const ogUrl = document.querySelector<HTMLMetaElement>('meta[property="og:url"]')
+    if (ogUrl) ogUrl.content = pageUrl
 
     if (!isPrivacyPage) {
       document.title = homeMetadata.title

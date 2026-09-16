@@ -24,5 +24,6 @@ O conteúdo de `dist/` é gerado pelo build. O projeto inclui `vercel.json` para
 - `src/pages/PrivacyPage.tsx`: política de privacidade.
 - `src/components`: cabeçalho, rodapé e marca.
 - `public/assets/robaski-logo-transparent.png`: ativo de marca com fundo transparente usado no site.
+- `public/robaski-compartilhamento-2026.jpg`: imagem de compartilhamento social no padrão Open Graph.
 
 O projeto não usa formulários, banco de dados, contas ou ferramentas próprias de rastreamento.
