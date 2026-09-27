@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://robaski.com.br/sitemap.xml

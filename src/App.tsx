@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { site } from './data/company'
 import { HomePage } from './pages/HomePage'
 import { PrivacyPage } from './pages/PrivacyPage'
 
@@ -11,8 +12,8 @@ const homeMetadata = {
 
 export default function App() {
   useEffect(() => {
-    const pageUrl = `${window.location.origin}${isPrivacyPage ? '/politica-de-privacidade' : '/'}`
-    const socialImageUrl = `${window.location.origin}/robaski-compartilhamento-2026.jpg`
+    const pageUrl = `${site.canonicalOrigin}${isPrivacyPage ? '/politica-de-privacidade' : '/'}`
+    const socialImageUrl = `${site.canonicalOrigin}${site.socialImagePath}`
     const canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]')
     if (canonical) canonical.href = pageUrl
 

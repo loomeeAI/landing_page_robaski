@@ -1,6 +1,8 @@
 export const company = {
   name: 'Distribuidora Robaski',
   shortName: 'Robaski',
+  legalName: 'EDSON RONALDO ROBASKI',
+  taxId: '00.746.618/0001-03',
   foundationYear: 1995,
   business: 'Comércio Atacadista',
   phoneDisplay: '+55 51 99988-3684',
@@ -10,13 +12,19 @@ export const company = {
     'Olá! Vim através do site da Distribuidora Robaski e gostaria de mais informações.',
   email: 'edson@robaski.com.br',
   address: {
-    street: 'R. Cristóvão Colombo, 201',
+    street: 'Rua Cristóvão Colombo, 201, térreo',
     neighborhood: 'Piratini',
     city: 'Sapucaia do Sul',
     state: 'RS',
     country: 'Brasil',
-    postalLabel: 'Sapucaia do Sul - RS',
+    postalCode: '93216-130',
+    postalLabel: 'Sapucaia do Sul/RS — CEP 93216-130',
   },
+} as const
+
+export const site = {
+  canonicalOrigin: 'https://robaski.com.br',
+  socialImagePath: '/robaski-compartilhamento-2026.jpg',
 } as const
 
 export const navigation = [

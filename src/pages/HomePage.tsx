@@ -209,7 +209,7 @@ export function HomePage() {
                 <p>{company.name}</p><span>Desde {company.foundationYear}</span>
               </div>
               <dl>
-                <div><dt>Endereço</dt><dd>{company.address.street}<br />{company.address.neighborhood}<br />{company.address.postalLabel}</dd></div>
+                <div><dt>Endereço</dt><dd>{company.address.street}<br />Bairro {company.address.neighborhood}<br />{company.address.postalLabel}</dd></div>
                 <div><dt>Telefone / WhatsApp</dt><dd><a href={companyLinks.whatsapp} target="_blank" rel="noreferrer">{company.phoneDisplay}</a></dd></div>
                 <div><dt>E-mail</dt><dd><a href={companyLinks.email}>{company.email}</a></dd></div>
               </dl>

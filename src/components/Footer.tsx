@@ -10,6 +10,10 @@ export function Footer() {
           <a href="/" aria-label="Distribuidora Robaski — início"><Logo /></a>
           <p>{company.name}</p>
           <span>Desde {company.foundationYear}.</span>
+          <div className="footer__legal">
+            <p>{company.name} — {company.legalName}</p>
+            <p>CNPJ {company.taxId}</p>
+          </div>
         </div>
 
         <nav className="footer__nav" aria-label="Navegação do rodapé">
@@ -26,7 +30,7 @@ export function Footer() {
           <a href={companyLinks.email}>{company.email}</a>
           <address>
             {company.address.street}<br />
-            {company.address.neighborhood}<br />
+            Bairro {company.address.neighborhood}<br />
             {company.address.postalLabel}
           </address>
         </div>
