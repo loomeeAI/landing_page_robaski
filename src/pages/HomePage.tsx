@@ -1,5 +1,6 @@
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
+import { Hero } from '../components/Hero'
 import { company, companyLinks } from '../data/company'
 
 const operationSteps = [
@@ -40,38 +41,7 @@ export function HomePage() {
       <Header />
 
       <main id="conteudo">
-        <section className="hero" id="inicio" aria-labelledby="hero-title">
-          <div className="hero__linework" aria-hidden="true"><span /><span /><span /></div>
-          <div className="container hero__inner">
-            <div className="hero__copy">
-              <p className="eyebrow eyebrow--gold">Distribuidora Robaski <span>•</span> Desde 1995</p>
-              <h1 id="hero-title">Distribuição que <em>move</em> negócios.</h1>
-              <p className="hero__lead">
-                Há mais de três décadas, a Robaski conecta operação comercial, logística e entrega para atender seus clientes com agilidade, compromisso e proximidade.
-              </p>
-              <div className="hero__actions">
-                <a className="button button--gold" href={companyLinks.whatsapp} target="_blank" rel="noreferrer">
-                  Falar no WhatsApp <span aria-hidden="true">↗</span>
-                </a>
-                <a className="button button--link" href="#empresa">
-                  Conhecer a Robaski <span aria-hidden="true">↓</span>
-                </a>
-              </div>
-            </div>
-
-            <div className="hero__graphic" role="img" aria-label="Mais de 30 anos de história">
-              <div className="hero__orbit hero__orbit--outer" />
-              <div className="hero__orbit hero__orbit--inner" />
-              <div className="hero__year">
-                <span>Desde</span>
-                <strong>1995</strong>
-                <small>Tradição em movimento</small>
-              </div>
-              <p className="hero__vertical">Comércio atacadista · Sapucaia do Sul/RS</p>
-            </div>
-          </div>
-          <div className="hero__scroll" aria-hidden="true"><span /> Continue</div>
-        </section>
+        <Hero />
 
         <section className="trust-strip" aria-label="Informações principais">
           <div className="container trust-strip__inner">
